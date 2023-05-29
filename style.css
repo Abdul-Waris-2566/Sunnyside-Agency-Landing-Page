@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Fraunces", serif;
+  font-family: "Barlow", sans-serif;
+}
+
+.header {
+  min-height: 80vh;
+  background-image: url(./images/desktop/image-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+
+  padding: 4.2rem 3.6rem;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.nav {
+  display: block;
+}
+
+.mobile-nav-btn {
+  display: none;
+}
+
+.nav-items {
+  display: flex;
+  gap: 3.2rem;
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact {
+  color: black;
+  text-transform: uppercase;
+  padding: 1.6rem 2.2rem;
+  background-color: #fff;
+  border-radius: 3.2rem;
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+}
+
+.contact:hover {
+  background-color: rgba(255, 255, 255, 0.205);
+  color: #fff;
+}
+
+.primary-heading {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4.4rem;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  color: #fff;
+}
+.arrow-down-icon {
+  height: 8.6rem;
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.services-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.services-image {
+  width: 100%;
+  height: 100%;
+}
+
+.services-section div:nth-child(3) {
+  grid-column: 2;
+  grid-row: 1;
+}
+.services-section div:nth-child(4) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.services-text-box {
+  margin: auto 15%;
+}
+
+.secondary-heading {
+  font-family: "Fraunces", serif;
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+
+.services-text-content {
+  color: hsl(232, 10%, 55%);
+  margin-top: 3.2rem;
+  margin-bottom: 3.8rem;
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+
+.info-link:link,
+.info-link:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: "Fraunces", serif;
+  color: black;
+  position: relative;
+}
+
+.info-link::after {
+  content: "";
+  width: 110%;
+  height: 50%;
+  display: inline;
+  position: absolute;
+  border-radius: 1rem;
+  top: 65%;
+  left: -5%;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.yellow-color::after {
+  background-color: hsl(51, 100%, 49%);
+}
+
+.red-color::after {
+  background-color: hsl(7, 99%, 70%);
+}
+
+.info-link:hover::after {
+  opacity: 1;
+}
+
+.services-image-box {
+  position: relative;
+}
+
+.image-info-box {
+  position: absolute;
+  top: 60%;
+  text-align: center;
+  margin: auto 20%;
+}
+
+.image-info-title {
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+
+.image-info-text {
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+
+.green-color {
+  color: hsl(167, 40%, 24%);
+}
+
+.blue-color {
+  color: hsl(198, 62%, 26%);
+}
+
+.testimonial-section {
+  text-align: center;
+  margin: 12rem 20vh;
+}
+
+.testimonial-heading {
+  font-family: "Fraunces", serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  color: hsl(210, 4%, 67%);
+}
+
+.testimonials-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2.6rem;
+  text-align: center;
+  margin-top: 7.2rem;
+}
+
+.client-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 4.2rem;
+}
+
+.testimonial-text {
+  color: hsl(213, 9%, 39%);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.client-name {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.client-position {
+  font-size: 1.2rem;
+  color: hsl(210, 4%, 67%);
+}
+
+.gallery-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  padding: 7.2rem;
+  background-color: hsla(168, 34%, 41%, 0.8);
+  filter: brightness(130%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo-green {
+  height: 2.8rem;
+  margin-bottom: 3.2rem;
+}
+
+.list-items {
+  display: flex;
+  gap: 4.2rem;
+  list-style: none;
+
+  margin-bottom: 4.8rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  color: hsla(167, 40%, 24%, 0.8);
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.social-icon {
+  width: 1.8rem;
+}
+
+.social-icon:hover {
+  display: block;
+  filter: brightness(60%);
+  transform: scale(1.1);
+}
+
+/* Media Query for medium size tablets (below 870px) */
+@media screen and (max-width: 54.4em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .services-text-box {
+    margin: auto 10%;
+  }
+  .services-text-content {
+    line-height: 1.5;
+  }
+
+  .image-info-box {
+    margin: auto 15%;
+  }
+  .image-info-text {
+    line-height: 1.6;
+  }
+  .testimonial-section {
+    margin: 9.6rem 15vh;
+  }
+  .testimonial-text {
+    line-height: 1.5;
+    margin-bottom: 4.2rem;
+  }
+}
+
+/* Media Query for small size tablets (below 770px) */
+@media screen and (max-width: 48.1em) {
+  .image-info-title {
+    margin-bottom: 2rem;
+  }
+  .image-info-text {
+    line-height: 1.5;
+  }
+  .testimonial-section {
+    margin: 9.6rem 8vh;
+  }
+  .testimonial-text {
+    line-height: 1.5;
+    margin-bottom: 3.8rem;
+  }
+}
+
+/* Media Query for Small tablets ( below 700px)  */
+@media screen and (max-width: 43.75em) {
+  .services-section {
+    grid-template-columns: 1fr;
+  }
+
+  .services-section div:nth-child(3) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .services-section div:nth-child(4) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .services-text-box {
+    margin: 10% 15%;
+    text-align: center;
+  }
+
+  .image-info-box {
+    top: 70%;
+  }
+
+  .testimonial-section {
+    margin: 7.2rem 15vh;
+  }
+
+  .testimonials-box {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 7rem;
+    margin-top: 6.4rem;
+  }
+
+  .client-img {
+    width: 7.2rem;
+    margin-bottom: 3.8rem;
+  }
+
+  .testimonial-text {
+    margin-bottom: 3.2rem;
+    padding: 0 10vh;
+  }
+
+  .gallery-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Media Query for Mobile phones ( below 580px)   */
+  @media screen and (max-width: 36.25em) {
+    .nav {
+      /* display: none; */
+      position: fixed;
+      top: 11rem;
+      width: 85vw;
+      padding-right: 1.2rem;
+      z-index: 2;
+
+      display: none;
+    }
+
+    .display {
+      display: block;
+    }
+
+    .nav-items {
+      background-color: #fff;
+      flex-direction: column;
+      padding: 4.8rem;
+      gap: 3.8rem;
+    }
+
+    .nav-link {
+      color: hsl(232, 10%, 55%);
+      font-size: 1.8rem;
+    }
+    .contact {
+      background-color: rgba(250, 212, 0, 0.8);
+      color: black;
+    }
+    .contact:hover {
+      background-color: rgba(250, 212, 0, 0.8);
+      color: black;
+    }
+
+    .mobile-nav-btn {
+      display: block;
+      width: 5rem;
+      position: fixed;
+      top: 3.2rem;
+      right: 3rem;
+      z-index: 2;
+      opacity: 0.8;
+    }
+
+    .services-text-box {
+      margin: 4.8rem 3.2rem;
+    }
+
+    .image-info-box {
+      top: 65%;
+    }
+
+    .testimonial-section {
+      margin: 4.8rem 3.2rem;
+    }
+
+    .testimonials-box {
+      row-gap: 5.4rem;
+    }
+
+    .client-img {
+      margin-bottom: 3rem;
+    }
+
+    .testimonial-text {
+      padding: 0;
+    }
+  }
+}
